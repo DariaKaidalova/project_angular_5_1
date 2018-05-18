@@ -1,0 +1,32 @@
+/* form */
+
+.l-form {}
+
+.b-form {
+
+	&__row {
+		display: flex;
+		margin: 0 -10px 20px;
+	}
+
+	&__item {
+    width: 100%;
+		padding: 0 10px;
+
+		&.-width_50 {
+			width: 50%;
+		}
+
+		&.-width_70 {
+			width: 70%;
+		}
+	}
+
+	&__panel {
+    text-align: center;
+	}
+}
+
+
+
+

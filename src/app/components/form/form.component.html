@@ -1,0 +1,73 @@
+<div class="l-form">
+  <form class="b-form" [formGroup]="printerFormGroup" (ngSubmit)="onSubmit(printerFormGroup)">
+    <div class="b-form__row">
+      <div class="b-form__item -width_50">
+        <input
+          type="text"
+          class="b-field"
+          placeholder="Name"
+          id="itemName"
+          formControlName="itemName">
+        <div class="b-message -type_error" id="nameErrorMessage" *ngIf="printerFormGroup.get('itemName').hasError('required') && printerFormGroup.get('itemName').touched">Name {{validationMessages.required}}</div>
+      </div>
+      <div class="b-form__item -width_50">
+        <select
+          class="b-select"
+          id="itemStatus"
+          formControlName="itemStatus">
+          <option *ngFor="let statusItem of statusList" [ngValue]="statusItem" [selected]="status == statusItem">{{statusItem}}</option>
+        </select>
+        <div class="b-message -type_error" *ngIf="printerFormGroup.get('itemStatus').hasError('required') && printerFormGroup.get('itemStatus').touched">Status {{validationMessages.required}}</div>
+      </div>
+    </div>
+    <div class="b-form__row">
+      <div class="b-form__item -width_70">
+        <textarea
+          class="b-field -type_textarea"
+          placeholder="Description"
+          id="itemDescription"
+          formControlName="itemDescription"></textarea>
+      </div>
+    </div>
+    <div class="b-form__row">
+      <div class="b-form__item -width_50">
+        <input
+          type="text"
+          class="b-field"
+          placeholder="Network address (IP)"
+          id="itemIp"
+          formControlName="itemIp">
+        <div class="b-message -type_error" *ngIf="printerFormGroup.get('itemIp').hasError('required') && printerFormGroup.get('itemIp').touched">IP {{validationMessages.required}}</div>
+        <div class="b-message -type_error" *ngIf="printerFormGroup.get('itemIp').hasError('pattern') && printerFormGroup.get('itemIp').touched">{{validationMessages.invalidIP}}</div>
+      </div>
+      <div class="b-form__item -width_50">
+        <input
+          type="text"
+          class="b-field"
+          placeholder="Colour"
+          id="itemColour"
+          formControlName="itemColour">
+        <div class="b-message -type_error" *ngIf="printerFormGroup.get('itemColour').hasError('required') && printerFormGroup.get('itemColour').touched">Colour {{validationMessages.required}}</div>
+      </div>
+    </div>
+    <div class="b-form__row">
+      <div class="b-form__item -width_50">
+        <input
+          type="text"
+          class="b-field"
+          placeholder="Type"
+          id="itemType"
+          formControlName="itemType">
+        <div class="b-message -type_error" *ngIf="printerFormGroup.get('itemType').hasError('required') && printerFormGroup.get('itemType').touched">Type {{validationMessages.required}}</div>
+      </div>
+      <div class="b-form__item -width_50"></div>
+    </div>
+
+    <div class="b-form__panel">
+      <button type="submit" id="submitButton" class="b-button" [disabled]="!printerFormGroup.valid" (click)="onSubmit($event, item)">
+        <i class="b-button__icon fa fa-floppy-o"></i> <span class="b-button__text">{{submitText}}</span>
+      </button>
+      <span class="b-button" (click)="onCancel($event)">Cancel</span>
+    </div>
+  </form>
+</div>

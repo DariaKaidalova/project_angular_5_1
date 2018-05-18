@@ -1,0 +1,56 @@
+/* global classes */
+.g-block {
+	
+	&__center {
+		max-width: $main-width;
+		min-width: $min-width;
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding: 20px;
+	}
+}
+
+
+.g-clearfix {
+	
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.g-wordBreak { 
+	-ms-word-break: break-all; 
+	word-break: break-word; 
+	word-wrap: break-word; 
+	-webkit-hyphens: auto; 
+	-moz-hyphens: auto; 
+	hyphens: auto; 
+}
+
+
+/* mixins */
+@mixin optional-at-root($sel) {
+	@at-root #{if(not &, $sel, selector-append(&, $sel))} {
+		@content;
+	}
+}
+
+@mixin placeholder {
+	@include optional-at-root('::-webkit-input-placeholder') {
+		@content;
+	}
+
+	@include optional-at-root(':-moz-placeholder') {
+		@content;
+	}
+
+	@include optional-at-root('::-moz-placeholder') {
+		@content;
+	}
+
+	@include optional-at-root(':-ms-input-placeholder') {
+		@content;
+	}
+}

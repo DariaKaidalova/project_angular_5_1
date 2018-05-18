@@ -1,0 +1,8 @@
+<div class="l-panel">
+  <div class="b-panel">
+    <span id="addButton" class="b-button" (click)="navigateToAddItem($event)">
+      <i class="b-button__icon fa fa-plus"></i> <span class="b-button__text">Add</span>
+    </span>
+  </div>
+</div>
+<list [list]="_storageService.printersList" (deleteAction)="deleteItem($event)" (downloadAction)="downloadItem($event)" (editAction)="navigateToEditItem($event[0], $event[1])"></list>

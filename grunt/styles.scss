@@ -1,0 +1,37 @@
+/*plugins*/
+//@import "includes/plugins/font-awesome/css/font-awesome.min.scss";
+
+/*styles*/
+
+/*common styles*/ 
+
+@import "includes/reset.scss";
+@import "includes/fonts.scss";
+@import "includes/variables.scss";
+@import "includes/global.scss";
+
+/*styles of top blocks*/
+
+.l-html {}
+
+.l-body {
+	background: $bg-color-main;
+	color: $color-main;
+	font: normal 14px/1.3 'Roboto', sans-serif;
+}
+
+.l-wrapper {}
+
+/*styles of blocks*/
+
+@import "includes/blocks/header.scss";
+@import "includes/blocks/content.scss";
+@import "includes/blocks/panel.scss";
+@import "includes/blocks/table.scss";
+@import "includes/blocks/form.scss";
+@import "includes/blocks/button.scss";
+@import "includes/blocks/field.scss";
+@import "includes/blocks/select.scss";
+@import "includes/blocks/message.scss";
+
+

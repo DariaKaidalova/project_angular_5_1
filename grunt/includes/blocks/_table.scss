@@ -1,0 +1,119 @@
+/* table */
+
+.l-table {}
+
+.b-table {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  &__rowHeader, &__row {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &.-direction_column {
+      flex-direction: column;
+    }
+  }
+
+  &__rowHeader {
+    background: $bg-color-2;
+    color: $color-2;
+  }
+
+  &__row {
+    &:nth-of-type(even) {
+      background: $bg-color-3;
+    }
+    &:nth-of-type(odd) {}
+  }
+
+  &__item {
+    @extend .g-wordBreak;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+
+    &.-type_buttons {
+      padding-right: 15px;
+      justify-content: flex-end;
+    }
+
+    &.-width_5 {
+      width: 5%;
+    }
+    &.-width_7 {
+      width: 7%;
+    }
+    &.-width_8 {
+      width: 8%;
+    }
+    &.-width_10 {
+      width: 10%;
+    }
+    &.-width_15 {
+      width: 15%;
+    }
+    &.-width_20 {
+      width: 20%;
+    }
+    &.-width_25 {
+      width: 25%;
+    }
+    &.-width_30 {
+      width: 30%;
+    }
+    &.-width_33 {
+      width: 30%;
+    }
+    &.-width_35 {
+      width: 35%;
+    }
+    &.-width_40 {
+      width: 40%;
+    }
+    &.-width_45 {
+      width: 45%;
+    }
+    &.-width_50 {
+      width: 50%;
+    }
+    &.-width_55 {
+      width: 55%;
+    }
+    &.-width_60 {
+      width: 60%;
+    }
+    &.-width_65 {
+      width: 65%;
+    }
+    &.-width_70 {
+      width: 70%;
+    }
+    &.-width_75 {
+      width: 75%;
+    }
+    &.-width_80 {
+      width: 80%;
+    }
+    &.-width_85 {
+      width: 85%;
+    }
+    &.-width_90 {
+      width: 90%;
+    }
+    &.-width_95 {
+      width: 95%;
+    }
+    &.-width_100 {
+      width: 100%;
+    }
+
+    &.-break_all {
+      word-break: break-all;
+    }
+  }
+}

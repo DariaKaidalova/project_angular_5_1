@@ -1,0 +1,14 @@
+/* header */
+
+.l-header {
+	min-height: 70px;
+	background: $bg-color-2;
+	color: $color-2;
+	font: 20px/1.3 'Pacifico', cursive;
+	text-align: center;
+}
+
+.b-header {
+	@extend .g-block__center;
+}
+

@@ -1,0 +1,27 @@
+<div class="l-table">
+  <div class="b-table">
+    <div class="b-table__rowHeader">
+      <div class="b-table__item -width_10">Name</div>
+      <div class="b-table__item -width_10">Status</div>
+      <div class="b-table__item -width_15">IP</div>
+      <div class="b-table__item -width_30">Description</div>
+      <div class="b-table__item -width_10">Colour</div>
+      <div class="b-table__item -width_10">Type</div>
+      <div class="b-table__item -width_15"></div>
+    </div>
+
+    <div class="b-table__row" *ngFor="let item of list">
+      <div class="b-table__item -width_10 data-name">{{item.name}}</div>
+      <div class="b-table__item -width_10 data-status">{{item.status}}</div>
+      <div class="b-table__item -width_15 -break_all">{{item.ip}}</div>
+      <div class="b-table__item -width_30">{{item.description}}</div>
+      <div class="b-table__item -width_10">{{item.colour}}</div>
+      <div class="b-table__item -width_10">{{item.type}}</div>
+      <div class="b-table__item -width_15 -type_buttons">
+        <span class="b-button -type_icon" (click)="editItem($event, item)"><i class="b-button__icon fa fa-pencil"></i></span>
+        <span class="b-button -type_icon" (click)="deleteItem(item.id)"><i class="b-button__icon fa fa-trash"></i></span>
+        <span class="b-button -type_icon" (click)="downloadFile(item)"><i class="b-button__icon fa fa-download"></i></span>
+      </div>
+    </div>
+  </div>
+</div>

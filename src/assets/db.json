@@ -1,0 +1,31 @@
+{
+  "printersList": [
+    {
+      "id": "0",
+      "name": "HP N0909",
+      "status": "Available",
+      "ip": "187.186.185.184",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "colour": "White",
+      "type": "Laser"
+    },
+    {
+      "id": "1",
+      "name": "Canon NT0102",
+      "status": "Available",
+      "ip": "100.100.100.100",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "colour": "Black",
+      "type": "Dot Matrix"
+    },
+    {
+      "id": "2",
+      "name": "Epson NC9999",
+      "status": "Available",
+      "ip": "189.189.189.189",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "colour": "Gray",
+      "type": "Ink Jet"
+    }
+  ]
+}

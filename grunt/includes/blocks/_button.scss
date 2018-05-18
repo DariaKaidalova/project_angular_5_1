@@ -1,0 +1,36 @@
+/* button */
+
+.b-button {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	min-width: 70px;
+	min-height: 35px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	padding: 8px 7px 7px;
+	margin: 0 5px 0 0;
+	border: 0;
+  background: $bg-color-main;
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, .3);
+  font-size: 16px;
+
+  &__icon, &__text {
+  	display: inline-block;
+  }
+
+  &:last-child {
+  	margin-right: 0;
+  }
+   
+	&.-type_icon {
+		min-width: 25px;
+		min-height: 25px;
+		padding: 5px;
+		font-size: 14px;
+	}
+}
+
+
+

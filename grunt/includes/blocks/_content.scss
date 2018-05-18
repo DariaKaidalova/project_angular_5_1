@@ -1,0 +1,9 @@
+/* content */
+
+.l-content {
+	min-height: calc(100vh - 70px);
+}
+
+.b-content {
+	@extend .g-block__center;
+}
