@@ -6,17 +6,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /*routing*/
 import { RoutingModule } from './modules/routing.module';
 
-/* components */
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ContentComponent } from './components/content/content.component';
-import { ListComponent } from './components/list/list.component';
-
 /* services */
 import { MockRestService } from './services/mock-rest.service';
 import { FunctionsService } from './services/functions.service';
 import { StorageService } from './services/storage.service';
 import { NavigationService } from './services/navigation.service';
+
+/* components */
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ContentComponent } from './components/content/content.component';
+import { ListComponent } from './components/list/list.component';
 import { ContentListComponent } from './components/content-list/content-list.component';
 import { ContentFormAddComponent } from './components/content-form-add/content-form-add.component';
 import { FormComponent } from './components/form/form.component';
